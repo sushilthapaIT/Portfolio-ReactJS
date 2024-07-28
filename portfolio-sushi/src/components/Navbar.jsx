@@ -5,13 +5,14 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <MainHeader>
-      <p className='logo'>My Logo</p>
+      {/* i will add my portfolio logo here */}
+      <p className='logo'>My Logo</p> 
       <NavLinks>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/projects'>Projects</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to='/'className="nav-link">Home</NavLink></li>
+        <li><NavLink to='/projects' className="nav-link">Projects</NavLink></li>
+        <li><NavLink to='/about' className="nav-link">About</NavLink></li>
       </NavLinks>
-      <NavLink className='cta' to='/contact'><button>Contact</button></NavLink>
+      <NavLink className='cta' to='/contact'><Button>Contact</Button></NavLink>
     </MainHeader>
   );
 }
@@ -26,6 +27,7 @@ const MainHeader = styled.header`
 
   .logo {
     cursor: pointer;
+    margin-right: auto;
   }
 `;
 
@@ -34,17 +36,29 @@ const NavLinks = styled.ul`
   display: flex;
   gap: 20px;
 
-  li {
-    margin: 0;
-  }
-
-  a {
+  li .nav-link{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
     text-decoration: none;
-    color: inherit;
-    font-weight: bold;
   }
 
-  a.active {
-    color: #007BFF;
+  .nav-links{
+    list-style: none;
+
   }
 `;
+
+const Button = styled.button`
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+  &:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+`
