@@ -8,9 +8,9 @@ const Navbar = () => {
       {/* i will add my portfolio logo here */}
       <p className='logo'>My Logo</p> 
       <NavLinks className="nav-link">
-        <li><NavLink to='/' className={(e) => (e.isActive ? 'red' : '')} >Home</NavLink></li>
-        <li><NavLink to='/projects' className={(e) => (e.isActive ? 'red' : '')} >Projects</NavLink></li>
-        <li><NavLink to='/about' className={(e) => (e.isActive ? 'red' : '')} >About</NavLink></li>
+        <li><NavLink to='/' className={(e) => (e.isActive ? 'active-navbar' : '')} >Home</NavLink></li>
+        <li><NavLink to='/projects' className={(e) => (e.isActive ? 'active-navbar' : '')} >Projects</NavLink></li>
+        <li><NavLink to='/about' className={(e) => (e.isActive ? 'active-navbar' : '')} >About</NavLink></li>
       </NavLinks>
       <NavLink className='cta' to='/contact'><Button>Contact</Button></NavLink>
     </MainHeader>
