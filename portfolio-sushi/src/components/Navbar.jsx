@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -12,7 +12,7 @@ const Navbar = () => {
         <li><NavLink to=''>Projects</NavLink></li>
         <li><NavLink to=''>About</NavLink></li>
       </NavLinks>
-      <a className='cta' href=''><button>Contact</button></a>
+      <Link className='cta' href=''><button>Contact</button></Link>
 
     </MainHeader>
   )
