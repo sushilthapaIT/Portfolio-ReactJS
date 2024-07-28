@@ -7,10 +7,10 @@ const Navbar = () => {
     <MainHeader>
       {/* i will add my portfolio logo here */}
       <p className='logo'>My Logo</p> 
-      <NavLinks>
-        <li><NavLink to='/'className="nav-link">Home</NavLink></li>
-        <li><NavLink to='/projects' className="nav-link">Projects</NavLink></li>
-        <li><NavLink to='/about' className="nav-link">About</NavLink></li>
+      <NavLinks className="nav-link">
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/projects' >Projects</NavLink></li>
+        <li><NavLink to='/about' >About</NavLink></li>
       </NavLinks>
       <NavLink className='cta' to='/contact'><Button>Contact</Button></NavLink>
     </MainHeader>
