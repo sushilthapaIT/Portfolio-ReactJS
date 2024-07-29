@@ -9,6 +9,11 @@ const Projects = () => {
   return (
     <div>
       This is project page
+      // search
+      // map method
+      // card
+      // image
+      // link
     </div>
   )
 }
