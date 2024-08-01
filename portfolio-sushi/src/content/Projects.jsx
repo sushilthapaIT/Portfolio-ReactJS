@@ -14,7 +14,7 @@ const Projects = () => {
             <Route path="/" element={<Homepage />} />
             <Route path="/myProjects" element={<MyProjects />} />
             <Route path="/contactMe" element={<ContactMe />} />
-            {/* <Route path="/About_Me" element={<About_me />} /> */}
+            <Route path="/About_Me" element={<About_me />} />
           </Routes>
           <Footer />
         </div>
