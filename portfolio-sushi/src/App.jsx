@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import { counterContext } from './context/context';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './content/Home';
 import About from './content/About';
@@ -51,7 +52,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <counterContext.Provider value={{ }}>
+      <RouterProvider router={router} />
+    </counterContext.Provider>
+  );
 }
 
 export default App;
