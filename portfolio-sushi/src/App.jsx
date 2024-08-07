@@ -51,12 +51,12 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
-  return (
-    <counterContext.Provider value={{ }}>
-      <RouterProvider router={router} />
-    </counterContext.Provider>
-  );
-}
+// function App() {
+//   return (
+//     <counterContext.Provider value={{ }}>
+//       <RouterProvider router={router} />
+//     </counterContext.Provider>
+//   );
+// }
 
 export default App;
